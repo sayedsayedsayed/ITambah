@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @StateObject var viewModel = BoardViewModel()
+    
     @State private var backHome =  false
     @State var myDice = 1
     @State var theDice = 1
@@ -57,9 +60,9 @@ struct MainView: View {
      */
     
     var body: some View {
-        if splashScreen{
-            
-            SplashDiceView(myDice: $myDice, theDice: $theDice, isDiceClickable: $isDiceClickable, isDotsClickable: $isDotsClickable, isCekClickable: $isCekClickable, isAnswerClickable: $isAnswerClickable, val1: $val1, intVal1: $intVal1, val2: $val2, intVal2: $intVal2, splash: $splashScreen, check1: $checkTrue, currentStage: $currentStage)
+        if viewModel.board.showSplashScreen {
+            SplashDiceView(viewModel: viewModel)
+//            SplashDiceView(myDice: $myDice, theDice: $theDice, isDiceClickable: $isDiceClickable, isDotsClickable: $isDotsClickable, isCekClickable: $isCekClickable, isAnswerClickable: $isAnswerClickable, val1: $val1, intVal1: $intVal1, val2: $val2, intVal2: $intVal2, splash: $splashScreen, check1: $checkTrue, currentStage: $currentStage)
         }else{
             ZStack{
                 
@@ -68,9 +71,11 @@ struct MainView: View {
                 VStack(spacing: 0.0){
                     HeaderView(hintBtn: $hintBtn, soundBtn: $soundBtn, backHome: $backHome, currentStage: $currentStage, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
                     
-                    DiceEquationView(theDice: $theDice, isDiceClickable: $isDiceClickable, hintBtn: $hintBtn, checkTrue: $checkTrue, checkTrue2: $checkTrue2, splashScreen: $splashScreen, val1: $val1, val2: $val2, result: $result, hintInformation: $hintInformation, currentStage: $currentStage, isAnswerClickable: $isAnswerClickable, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
+//                    DiceEquationView(theDice: $theDice, isDiceClickable: $isDiceClickable, hintBtn: $hintBtn, checkTrue: $checkTrue, checkTrue2: $checkTrue2, splashScreen: $splashScreen, val1: $val1, val2: $val2, result: $result, hintInformation: $hintInformation, currentStage: $currentStage, isAnswerClickable: $isAnswerClickable, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
+                    DiceEquationView(viewModel: viewModel)
                     
-                    DotsView(dots: $dots, val1: $val1, val2: $val2, checkTrue: $checkTrue, checkTrue2: $checkTrue2, dotsCount: $dotsCount, hintInformation: $hintInformation, hintBtn: $hintBtn, intVal1: $intVal1, intVal2: $intVal2, checkFalse: $checkFalse, finalCount: $finalCount, dotsCountLap1: $dotsCountLap1, result: $result, checkCorrect: $checkCorrect, currentStage: $currentStage, isDiceClickable: $isDiceClickable, isDotsClickable: $isDotsClickable, isCekClickable: $isCekClickable, isAnswerClickable: $isAnswerClickable, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
+//                    DotsView(dots: $dots, val1: $val1, val2: $val2, checkTrue: $checkTrue, checkTrue2: $checkTrue2, dotsCount: $dotsCount, hintInformation: $hintInformation, hintBtn: $hintBtn, intVal1: $intVal1, intVal2: $intVal2, checkFalse: $checkFalse, finalCount: $finalCount, dotsCountLap1: $dotsCountLap1, result: $result, checkCorrect: $checkCorrect, currentStage: $currentStage, isDiceClickable: $isDiceClickable, isDotsClickable: $isDotsClickable, isCekClickable: $isCekClickable, isAnswerClickable: $isAnswerClickable, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
+                    DotsView(viewModel: viewModel)
                     
                 }
                 
@@ -97,7 +102,7 @@ struct MainView: View {
     }
     
 }
-
+/*
 struct SplashDiceView: View{
     @Binding var myDice: Int
     @Binding var theDice: Int
@@ -118,19 +123,7 @@ struct SplashDiceView: View{
     let timer = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
     var body: some View{
         ZStack{
-            Rectangle()
-                .blur(radius: 5)
-                .ignoresSafeArea()
-                .foregroundColor(Color("PrimaryColor"))
-            Image("Star 1")
-                .offset(y:205)
-                .blur(radius: 5)
-            Image("Star 2")
-                .offset(x:300, y: -70)
-                .blur(radius: 5)
-            Image("Star 3")
-                .offset(x: -400, y: 75)
-                .blur(radius: 5)
+            BackgroundView()
             Image("Big Dice \(myDice)")
         }
         .onReceive(timer){ _ in
@@ -168,7 +161,7 @@ struct SplashDiceView: View{
         }
     }
 }
-
+*/
 struct HintView: View{
     @Binding var hintBtn: Bool
     @Binding var currentStage: Int
@@ -268,7 +261,7 @@ struct HeaderView: View {
         .padding(.bottom, 15.0)
     }
 }
-
+/*
 struct DiceEquationView: View {
     @Binding var theDice: Int
     @Binding var isDiceClickable: Bool
@@ -558,6 +551,7 @@ struct DotsView: View {
     }
     
 }
+*/
 
 struct WrongAnswerView: View {
     @Binding var checkFalse: Bool
@@ -641,23 +635,6 @@ struct CorrectAnswerView: View {
                     
                 }
             }
-        }
-    }
-}
-
-struct BackgroundView: View {
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .ignoresSafeArea()
-                .foregroundColor(Color("PrimaryColor"))
-            
-            Image("Star 1")
-                .offset(y:205)
-            Image("Star 2")
-                .offset(x:300, y: -70)
-            Image("Star 3")
-                .offset(x: -400, y: 75)
         }
     }
 }
