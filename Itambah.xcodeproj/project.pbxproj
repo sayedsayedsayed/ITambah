@@ -8,27 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		CC5B423B29DB0E2000A40DBE /* ItambahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B423A29DB0E2000A40DBE /* ItambahApp.swift */; };
-		CC5B423D29DB0E2000A40DBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B423C29DB0E2000A40DBE /* ContentView.swift */; };
 		CC5B423F29DB0E2100A40DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5B423E29DB0E2100A40DBE /* Assets.xcassets */; };
 		CC5B424229DB0E2100A40DBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5B424129DB0E2100A40DBE /* Preview Assets.xcassets */; };
 		CC5B424929DB109C00A40DBE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B424829DB109C00A40DBE /* HomeView.swift */; };
 		CC5B424B29DB176300A40DBE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B424A29DB176300A40DBE /* MainView.swift */; };
-		CC6CD77F29EA930A00493E44 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CD77E29EA930A00493E44 /* ParentView.swift */; };
+		CC6CD77F29EA930A00493E44 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CD77E29EA930A00493E44 /* InstructionView.swift */; };
 		CCAA475E29E29A7800CEBD06 /* kids.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCAA475D29E29A7800CEBD06 /* kids.mp3 */; };
 		CCAA476029E29AEA00CEBD06 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAA475F29E29AEA00CEBD06 /* SoundManager.swift */; };
+		EC7D5DAC2A925D0E006F04FA /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D5DAB2A925D0E006F04FA /* BackgroundView.swift */; };
+		ECA6C4452A924F3D001940F8 /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6C4442A924F3D001940F8 /* NavigationViewModel.swift */; };
+		ECCC86F82A92643B00C3531D /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86F72A92643B00C3531D /* Misc.swift */; };
+		ECCC86FA2A92659E00C3531D /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86F92A92659E00C3531D /* StyleManager.swift */; };
+		ECCC86FC2A92E12100C3531D /* DiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86FB2A92E12100C3531D /* DiceModel.swift */; };
+		ECCC86FE2A92E26800C3531D /* EquationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86FD2A92E26800C3531D /* EquationModel.swift */; };
+		ECCC87002A92E30E00C3531D /* DotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86FF2A92E30E00C3531D /* DotsModel.swift */; };
+		ECCC87022A93131600C3531D /* SplashDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87012A93131600C3531D /* SplashDiceView.swift */; };
+		ECCC87042A931B6F00C3531D /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87032A931B6F00C3531D /* BoardModel.swift */; };
+		ECCC87062A934B5800C3531D /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87052A934B5800C3531D /* BoardViewModel.swift */; };
+		ECCC87082A9361AC00C3531D /* DiceEquationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87072A9361AC00C3531D /* DiceEquationView.swift */; };
+		ECCC870A2A936A2B00C3531D /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87092A936A2B00C3531D /* DotsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC5B423729DB0E2000A40DBE /* Itambah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Itambah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5B423A29DB0E2000A40DBE /* ItambahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItambahApp.swift; sourceTree = "<group>"; };
-		CC5B423C29DB0E2000A40DBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC5B423E29DB0E2100A40DBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5B424129DB0E2100A40DBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC5B424829DB109C00A40DBE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CC5B424A29DB176300A40DBE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		CC6CD77E29EA930A00493E44 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		CC6CD77E29EA930A00493E44 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		CCAA475D29E29A7800CEBD06 /* kids.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kids.mp3; sourceTree = "<group>"; };
 		CCAA475F29E29AEA00CEBD06 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		EC7D5DAB2A925D0E006F04FA /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		ECA6C4442A924F3D001940F8 /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		ECCC86F72A92643B00C3531D /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		ECCC86F92A92659E00C3531D /* StyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		ECCC86FB2A92E12100C3531D /* DiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceModel.swift; sourceTree = "<group>"; };
+		ECCC86FD2A92E26800C3531D /* EquationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationModel.swift; sourceTree = "<group>"; };
+		ECCC86FF2A92E30E00C3531D /* DotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsModel.swift; sourceTree = "<group>"; };
+		ECCC87012A93131600C3531D /* SplashDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDiceView.swift; sourceTree = "<group>"; };
+		ECCC87032A931B6F00C3531D /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
+		ECCC87052A934B5800C3531D /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		ECCC87072A9361AC00C3531D /* DiceEquationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceEquationView.swift; sourceTree = "<group>"; };
+		ECCC87092A936A2B00C3531D /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				CC5B423A29DB0E2000A40DBE /* ItambahApp.swift */,
-				CC5B423C29DB0E2000A40DBE /* ContentView.swift */,
-				CC5B424A29DB176300A40DBE /* MainView.swift */,
-				CC5B424829DB109C00A40DBE /* HomeView.swift */,
-				CCAA475F29E29AEA00CEBD06 /* SoundManager.swift */,
-				CC6CD77E29EA930A00493E44 /* ParentView.swift */,
+				ECA6C4432A924F22001940F8 /* Utilities */,
+				ECA6C4422A924F0C001940F8 /* ViewModel */,
+				ECA6C4412A924F04001940F8 /* Model */,
+				ECA6C41A2A90EECD001940F8 /* View */,
 				CC5B423E29DB0E2100A40DBE /* Assets.xcassets */,
 				CCAA475C29E29A4700CEBD06 /* sounds */,
 				CC5B424029DB0E2100A40DBE /* Preview Content */,
@@ -88,6 +109,50 @@
 				CCAA475D29E29A7800CEBD06 /* kids.mp3 */,
 			);
 			path = sounds;
+			sourceTree = "<group>";
+		};
+		ECA6C41A2A90EECD001940F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B424A29DB176300A40DBE /* MainView.swift */,
+				CC5B424829DB109C00A40DBE /* HomeView.swift */,
+				CC6CD77E29EA930A00493E44 /* InstructionView.swift */,
+				EC7D5DAB2A925D0E006F04FA /* BackgroundView.swift */,
+				ECCC87012A93131600C3531D /* SplashDiceView.swift */,
+				ECCC87072A9361AC00C3531D /* DiceEquationView.swift */,
+				ECCC87092A936A2B00C3531D /* DotsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECA6C4412A924F04001940F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECCC86FB2A92E12100C3531D /* DiceModel.swift */,
+				ECCC86FD2A92E26800C3531D /* EquationModel.swift */,
+				ECCC86FF2A92E30E00C3531D /* DotsModel.swift */,
+				ECCC87032A931B6F00C3531D /* BoardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECA6C4422A924F0C001940F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ECA6C4442A924F3D001940F8 /* NavigationViewModel.swift */,
+				ECCC87052A934B5800C3531D /* BoardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ECA6C4432A924F22001940F8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CCAA475F29E29AEA00CEBD06 /* SoundManager.swift */,
+				ECCC86F72A92643B00C3531D /* Misc.swift */,
+				ECCC86F92A92659E00C3531D /* StyleManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,11 +227,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5B424929DB109C00A40DBE /* HomeView.swift in Sources */,
+				ECCC870A2A936A2B00C3531D /* DotsView.swift in Sources */,
+				ECCC87002A92E30E00C3531D /* DotsModel.swift in Sources */,
 				CC5B424B29DB176300A40DBE /* MainView.swift in Sources */,
-				CC5B423D29DB0E2000A40DBE /* ContentView.swift in Sources */,
 				CC5B423B29DB0E2000A40DBE /* ItambahApp.swift in Sources */,
-				CC6CD77F29EA930A00493E44 /* ParentView.swift in Sources */,
+				ECCC87022A93131600C3531D /* SplashDiceView.swift in Sources */,
+				ECCC87062A934B5800C3531D /* BoardViewModel.swift in Sources */,
+				ECCC87042A931B6F00C3531D /* BoardModel.swift in Sources */,
+				ECCC87082A9361AC00C3531D /* DiceEquationView.swift in Sources */,
+				ECCC86F82A92643B00C3531D /* Misc.swift in Sources */,
+				ECCC86FC2A92E12100C3531D /* DiceModel.swift in Sources */,
+				ECCC86FE2A92E26800C3531D /* EquationModel.swift in Sources */,
+				EC7D5DAC2A925D0E006F04FA /* BackgroundView.swift in Sources */,
+				CC6CD77F29EA930A00493E44 /* InstructionView.swift in Sources */,
+				ECCC86FA2A92659E00C3531D /* StyleManager.swift in Sources */,
 				CCAA476029E29AEA00CEBD06 /* SoundManager.swift in Sources */,
+				ECA6C4452A924F3D001940F8 /* NavigationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
