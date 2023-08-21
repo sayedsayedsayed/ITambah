@@ -222,6 +222,10 @@ struct DotsView: View {
         }
     }
     
+//    func addDots(at index: (row: Int, cols: Int)){
+//        viewModel.board.dots[index.row].append(contentsOf: [index.cols])
+//    }
+    
 }
 
 struct DotsView_Previews: PreviewProvider {

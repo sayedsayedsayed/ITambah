@@ -27,6 +27,10 @@
 		ECCC87062A934B5800C3531D /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87052A934B5800C3531D /* BoardViewModel.swift */; };
 		ECCC87082A9361AC00C3531D /* DiceEquationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87072A9361AC00C3531D /* DiceEquationView.swift */; };
 		ECCC870A2A936A2B00C3531D /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87092A936A2B00C3531D /* DotsView.swift */; };
+		ECCC870C2A9379B200C3531D /* WrongAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC870B2A9379B200C3531D /* WrongAnswerView.swift */; };
+		ECCC870E2A9379D800C3531D /* CorrectAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC870D2A9379D800C3531D /* CorrectAnswerView.swift */; };
+		ECCC87102A939A9C00C3531D /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC870F2A939A9C00C3531D /* HintView.swift */; };
+		ECCC87122A93B80E00C3531D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87112A93B80E00C3531D /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		ECCC87052A934B5800C3531D /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
 		ECCC87072A9361AC00C3531D /* DiceEquationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceEquationView.swift; sourceTree = "<group>"; };
 		ECCC87092A936A2B00C3531D /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
+		ECCC870B2A9379B200C3531D /* WrongAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswerView.swift; sourceTree = "<group>"; };
+		ECCC870D2A9379D800C3531D /* CorrectAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerView.swift; sourceTree = "<group>"; };
+		ECCC870F2A939A9C00C3531D /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
+		ECCC87112A93B80E00C3531D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +122,17 @@
 		ECA6C41A2A90EECD001940F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CC5B424A29DB176300A40DBE /* MainView.swift */,
+				EC7D5DAB2A925D0E006F04FA /* BackgroundView.swift */,
 				CC5B424829DB109C00A40DBE /* HomeView.swift */,
 				CC6CD77E29EA930A00493E44 /* InstructionView.swift */,
-				EC7D5DAB2A925D0E006F04FA /* BackgroundView.swift */,
-				ECCC87012A93131600C3531D /* SplashDiceView.swift */,
+				CC5B424A29DB176300A40DBE /* MainView.swift */,
+				ECCC87112A93B80E00C3531D /* HeaderView.swift */,
+				ECCC870F2A939A9C00C3531D /* HintView.swift */,
 				ECCC87072A9361AC00C3531D /* DiceEquationView.swift */,
+				ECCC87012A93131600C3531D /* SplashDiceView.swift */,
 				ECCC87092A936A2B00C3531D /* DotsView.swift */,
+				ECCC870D2A9379D800C3531D /* CorrectAnswerView.swift */,
+				ECCC870B2A9379B200C3531D /* WrongAnswerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCC870C2A9379B200C3531D /* WrongAnswerView.swift in Sources */,
 				CC5B424929DB109C00A40DBE /* HomeView.swift in Sources */,
+				ECCC870E2A9379D800C3531D /* CorrectAnswerView.swift in Sources */,
 				ECCC870A2A936A2B00C3531D /* DotsView.swift in Sources */,
 				ECCC87002A92E30E00C3531D /* DotsModel.swift in Sources */,
 				CC5B424B29DB176300A40DBE /* MainView.swift in Sources */,
@@ -235,7 +249,9 @@
 				ECCC87062A934B5800C3531D /* BoardViewModel.swift in Sources */,
 				ECCC87042A931B6F00C3531D /* BoardModel.swift in Sources */,
 				ECCC87082A9361AC00C3531D /* DiceEquationView.swift in Sources */,
+				ECCC87102A939A9C00C3531D /* HintView.swift in Sources */,
 				ECCC86F82A92643B00C3531D /* Misc.swift in Sources */,
+				ECCC87122A93B80E00C3531D /* HeaderView.swift in Sources */,
 				ECCC86FC2A92E12100C3531D /* DiceModel.swift in Sources */,
 				ECCC86FE2A92E26800C3531D /* EquationModel.swift in Sources */,
 				EC7D5DAC2A925D0E006F04FA /* BackgroundView.swift in Sources */,

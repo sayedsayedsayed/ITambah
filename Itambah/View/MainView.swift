@@ -11,38 +11,38 @@ struct MainView: View {
     
     @StateObject var viewModel = BoardViewModel()
     
-    @State private var backHome =  false
-    @State var myDice = 1
-    @State var theDice = 1
-    @State private var dots : [[Int]] = [[1,2,3], [4,5,6], [7,8,9], [10,11,12]]
-    @State var val1 = "?"
-    @State var intVal1: Int = 0
-    @State var val2 = "?"
-    @State var intVal2: Int = 0
-    @State var result: Int?
-    @State private var hintInformation = ""
-    @State private var finalCount =  false
-    @State var hintBtn = true
-    @State var soundBtn = true
-    @State private var dotsCount: [Int] = []
-    @State private var dotsCountLap1 : Int = 0
-    @State private var currentDice = 0
-    @State private var splashScreen = false
-    @State private var checkTrue =  false
-    @State private var checkTrue2 =  false
-    @State private var checkFalse = false
-    @State private var checkCorrect = false
-    
-    @State var isDiceClickable = true //should be true as it's the first stage
-    @State var isDotsClickable = false
-    @State var isCekClickable = false
-    @State var isAnswerClickable = false
-    
-    @State private var currentStage: Int = 0
-    
-    @State private var isDiceGlow: Bool = false
-    @State private var isDotsGlow: Bool = false
-    @State private var isAnswerGlow: Bool = false
+//    @State private var backHome =  false
+//    @State var myDice = 1
+//    @State var theDice = 1
+//    @State private var dots : [[Int]] = [[1,2,3], [4,5,6], [7,8,9], [10,11,12]]
+//    @State var val1 = "?"
+//    @State var intVal1: Int = 0
+//    @State var val2 = "?"
+//    @State var intVal2: Int = 0
+//    @State var result: Int?
+//    @State private var hintInformation = ""
+//    @State private var finalCount =  false
+//    @State var hintBtn = true
+//    @State var soundBtn = true
+//    @State private var dotsCount: [Int] = []
+//    @State private var dotsCountLap1 : Int = 0
+//    @State private var currentDice = 0
+//    @State private var splashScreen = false
+//    @State private var checkTrue =  false
+//    @State private var checkTrue2 =  false
+//    @State private var checkFalse = false
+//    @State private var checkCorrect = false
+//
+//    @State var isDiceClickable = true //should be true as it's the first stage
+//    @State var isDotsClickable = false
+//    @State var isCekClickable = false
+//    @State var isAnswerClickable = false
+//
+//    @State private var currentStage: Int = 0
+//
+//    @State private var isDiceGlow: Bool = false
+//    @State private var isDotsGlow: Bool = false
+//    @State private var isAnswerGlow: Bool = false
     /*
      currentStage:
      0. Click the dice -> isDiceClickable true
@@ -69,8 +69,8 @@ struct MainView: View {
                 BackgroundView()
                 
                 VStack(spacing: 0.0){
-                    HeaderView(hintBtn: $hintBtn, soundBtn: $soundBtn, backHome: $backHome, currentStage: $currentStage, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
-                    
+//                    HeaderView(hintBtn: $hintBtn, soundBtn: $soundBtn, backHome: $backHome, currentStage: $currentStage, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
+//                    HeaderView(viewModel: viewModel)
 //                    DiceEquationView(theDice: $theDice, isDiceClickable: $isDiceClickable, hintBtn: $hintBtn, checkTrue: $checkTrue, checkTrue2: $checkTrue2, splashScreen: $splashScreen, val1: $val1, val2: $val2, result: $result, hintInformation: $hintInformation, currentStage: $currentStage, isAnswerClickable: $isAnswerClickable, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
                     DiceEquationView(viewModel: viewModel)
                     
@@ -80,12 +80,14 @@ struct MainView: View {
                 }
                 
                 
-                if ((checkTrue != true || finalCount != true) && (checkFalse == true)){
-                    WrongAnswerView(checkFalse: $checkFalse)
+                if ((viewModel.board.checkTrue != true || viewModel.board.finalCount != true) && (viewModel.board.checkFalse == true)){
+//                    WrongAnswerView(checkFalse: $checkFalse)
+                    WrongAnswerView(viewModel: viewModel)
                 }
                 
-                if ((checkTrue == true || finalCount == true) && checkCorrect == true) {
-                    CorrectAnswerView(finalCount: $finalCount, backHome: $backHome, checkCorrect: $checkCorrect)
+                if ((viewModel.board.checkTrue == true || viewModel.board.finalCount == true) && viewModel.board.checkCorrect == true) {
+//                    CorrectAnswerView(finalCount: $finalCount, backHome: $backHome, checkCorrect: $checkCorrect)
+                    CorrectAnswerView(viewModel: viewModel)
                 }
                 
             }
@@ -95,10 +97,6 @@ struct MainView: View {
         }
         
         
-    }
-    
-    func addDots(at index: (row: Int, cols: Int)){
-        dots[index.row].append(contentsOf: [index.cols])
     }
     
 }
@@ -161,19 +159,13 @@ struct SplashDiceView: View{
         }
     }
 }
-*/
+
 struct HintView: View{
     @Binding var hintBtn: Bool
     @Binding var currentStage: Int
     @Binding var isDiceGlow: Bool
     @Binding var isDotsGlow: Bool
     @Binding var isAnswerGlow: Bool
-    
-    let hintMessages: [String] = ["Tekan dadu untuk memulai",
-                                  "Tekan bola-bola di bawah dadu sejumlah angka yang tertera lalu tekan tombol \"Cek\"",
-                                  "Tekan dadu lagi untuk melanjutkan",
-                                  "Tekan bola-bola di bawah dadu sejumlah angka yang tertera lalu tekan tombol \"Cek\"",
-                                  "Masukan jawaban penjumlahan pada kotak"]
     
     var body: some View{
         if hintBtn{
@@ -207,14 +199,14 @@ struct HintView: View{
         }
     }
 }
-
+*/
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .previewInterfaceOrientation(.landscapeRight)
     }
 }
-
+/*
 struct HeaderView: View {
     @Binding var hintBtn: Bool
     @Binding var soundBtn: Bool
@@ -229,7 +221,8 @@ struct HeaderView: View {
             Spacer()
             Spacer()
             Spacer()
-            HintView(hintBtn: $hintBtn, currentStage: $currentStage, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
+            
+//            HintView(hintBtn: $hintBtn, currentStage: $currentStage, isDiceGlow: $isDiceGlow, isDotsGlow: $isDotsGlow, isAnswerGlow: $isAnswerGlow)
             
             Spacer()
             
@@ -261,7 +254,7 @@ struct HeaderView: View {
         .padding(.bottom, 15.0)
     }
 }
-/*
+
 struct DiceEquationView: View {
     @Binding var theDice: Int
     @Binding var isDiceClickable: Bool
@@ -551,7 +544,7 @@ struct DotsView: View {
     }
     
 }
-*/
+
 
 struct WrongAnswerView: View {
     @Binding var checkFalse: Bool
@@ -638,3 +631,4 @@ struct CorrectAnswerView: View {
         }
     }
 }
+*/

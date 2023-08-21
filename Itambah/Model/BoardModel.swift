@@ -35,5 +35,8 @@ struct Board {
     var dotsCountLap1 : Int = 0
     var isDotsGlow: Bool = false
     var checkCorrect = false
+    
+    var currentStage: Int = 0
+    var soundBtn: Bool = true
 }
  

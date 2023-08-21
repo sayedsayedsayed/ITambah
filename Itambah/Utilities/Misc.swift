@@ -26,6 +26,14 @@ let instructions = [
     "12. Selamat bermain dan belajar!"
 ]
 
+let hintMessages: [String] = [
+    "Tekan dadu untuk memulai",
+    "Tekan bola-bola di bawah dadu sejumlah angka yang tertera lalu tekan tombol \"Cek\"",
+    "Tekan dadu lagi untuk melanjutkan",
+    "Tekan bola-bola di bawah dadu sejumlah angka yang tertera lalu tekan tombol \"Cek\"",
+    "Masukan jawaban penjumlahan pada kotak"
+]
+
 enum glow {
     case none
     case dice
