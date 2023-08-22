@@ -11,21 +11,27 @@ struct SplashDiceView: View {
     @ObservedObject var viewModel: BoardViewModel
 
     let timer = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
+    
+    @State private var rand = 1
+    
     var body: some View{
         ZStack{
             BackgroundView()
-            Image("Big Dice \(viewModel.board.diceValue)")
+            Image("Big Dice \(rand)")
         }
         .onReceive(timer){ _ in
+            
             DispatchQueue.main.async {
                 withAnimation {
-                    viewModel.board.diceValue = Int.random(in: 1...6)
+                    rand = Int.random(in: 1...6)
                 }
             }
         }
-        .onAppear{
+        
+        .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 withAnimation {
+                    viewModel.board.diceValue = Int.random(in: 1...6)
                     if viewModel.board.firstValue == "?" {
                         viewModel.board.firstValue = String(viewModel.board.diceValue)
                     } else {

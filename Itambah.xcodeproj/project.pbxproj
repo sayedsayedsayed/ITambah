@@ -19,9 +19,6 @@
 		ECA6C4452A924F3D001940F8 /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6C4442A924F3D001940F8 /* NavigationViewModel.swift */; };
 		ECCC86F82A92643B00C3531D /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86F72A92643B00C3531D /* Misc.swift */; };
 		ECCC86FA2A92659E00C3531D /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86F92A92659E00C3531D /* StyleManager.swift */; };
-		ECCC86FC2A92E12100C3531D /* DiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86FB2A92E12100C3531D /* DiceModel.swift */; };
-		ECCC86FE2A92E26800C3531D /* EquationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86FD2A92E26800C3531D /* EquationModel.swift */; };
-		ECCC87002A92E30E00C3531D /* DotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC86FF2A92E30E00C3531D /* DotsModel.swift */; };
 		ECCC87022A93131600C3531D /* SplashDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87012A93131600C3531D /* SplashDiceView.swift */; };
 		ECCC87042A931B6F00C3531D /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87032A931B6F00C3531D /* BoardModel.swift */; };
 		ECCC87062A934B5800C3531D /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87052A934B5800C3531D /* BoardViewModel.swift */; };
@@ -47,9 +44,6 @@
 		ECA6C4442A924F3D001940F8 /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
 		ECCC86F72A92643B00C3531D /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		ECCC86F92A92659E00C3531D /* StyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
-		ECCC86FB2A92E12100C3531D /* DiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceModel.swift; sourceTree = "<group>"; };
-		ECCC86FD2A92E26800C3531D /* EquationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationModel.swift; sourceTree = "<group>"; };
-		ECCC86FF2A92E30E00C3531D /* DotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsModel.swift; sourceTree = "<group>"; };
 		ECCC87012A93131600C3531D /* SplashDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDiceView.swift; sourceTree = "<group>"; };
 		ECCC87032A931B6F00C3531D /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
 		ECCC87052A934B5800C3531D /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
@@ -140,9 +134,6 @@
 		ECA6C4412A924F04001940F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ECCC86FB2A92E12100C3531D /* DiceModel.swift */,
-				ECCC86FD2A92E26800C3531D /* EquationModel.swift */,
-				ECCC86FF2A92E30E00C3531D /* DotsModel.swift */,
 				ECCC87032A931B6F00C3531D /* BoardModel.swift */,
 			);
 			path = Model;
@@ -242,7 +233,6 @@
 				CC5B424929DB109C00A40DBE /* HomeView.swift in Sources */,
 				ECCC870E2A9379D800C3531D /* CorrectAnswerView.swift in Sources */,
 				ECCC870A2A936A2B00C3531D /* DotsView.swift in Sources */,
-				ECCC87002A92E30E00C3531D /* DotsModel.swift in Sources */,
 				CC5B424B29DB176300A40DBE /* MainView.swift in Sources */,
 				CC5B423B29DB0E2000A40DBE /* ItambahApp.swift in Sources */,
 				ECCC87022A93131600C3531D /* SplashDiceView.swift in Sources */,
@@ -252,8 +242,6 @@
 				ECCC87102A939A9C00C3531D /* HintView.swift in Sources */,
 				ECCC86F82A92643B00C3531D /* Misc.swift in Sources */,
 				ECCC87122A93B80E00C3531D /* HeaderView.swift in Sources */,
-				ECCC86FC2A92E12100C3531D /* DiceModel.swift in Sources */,
-				ECCC86FE2A92E26800C3531D /* EquationModel.swift in Sources */,
 				EC7D5DAC2A925D0E006F04FA /* BackgroundView.swift in Sources */,
 				CC6CD77F29EA930A00493E44 /* InstructionView.swift in Sources */,
 				ECCC86FA2A92659E00C3531D /* StyleManager.swift in Sources */,

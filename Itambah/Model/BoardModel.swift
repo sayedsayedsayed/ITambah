@@ -14,16 +14,12 @@ struct Board {
     var secondValue: String = "?"
     var answerValue: Int?
     var isAnswerClickable: Bool = true
-//    var dotsCounter: Int = 0 //???
     var showSplashScreen: Bool = false
-    
     var btnHintClicked: Bool = true
     var isDiceGlow: Bool = false
     var isAnswerGlow: Bool = false
-    
     var isDotsClickable: Bool = false
     var isCheckClickable: Bool = false
-    
     var checkTrue: Bool = false
     var checkTrue2: Bool = false
     

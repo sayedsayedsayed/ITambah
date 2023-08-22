@@ -38,7 +38,6 @@ struct HintView: View {
                         viewModel.board.isAnswerGlow = false
                     }
                 }
-            
         }
     }
 }
