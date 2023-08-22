@@ -66,6 +66,7 @@ struct DotsView: View {
                                     .onTapGesture {
                                         if viewModel.board.isDotsClickable {
                                             withAnimation{
+
                                                 viewModel.board.dots[viewModel.board.dotsCount[index]].append(contentsOf: [viewModel.board.dots.count+1])
                                                 viewModel.board.dotsCount.remove(at: index)
                                             }
