@@ -95,8 +95,8 @@
 				ECA6C4412A924F04001940F8 /* Model */,
 				ECA6C41A2A90EECD001940F8 /* View */,
 				CC5B423E29DB0E2100A40DBE /* Assets.xcassets */,
-				CCAA475C29E29A4700CEBD06 /* sounds */,
 				CC5B424029DB0E2100A40DBE /* Preview Content */,
+				CCAA475C29E29A4700CEBD06 /* sounds */,
 			);
 			path = Itambah;
 			sourceTree = "<group>";

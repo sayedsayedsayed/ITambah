@@ -17,33 +17,21 @@ struct MainView: View {
             
         } else {
             ZStack {
-                
                 BackgroundView()
-                
                 VStack(spacing: 0.0){
                     HeaderView(viewModel: viewModel)
                     DiceEquationView(viewModel: viewModel)
                     DotsView(viewModel: viewModel)
                 }
                 
-                
                 if viewModel.board.showWrongView {
                     WrongAnswerView(showWrongView: $viewModel.board.showWrongView)
-                }
-                
-                if viewModel.board.showCorrectView {
+                } else if viewModel.board.showCorrectView {
                     CorrectAnswerView(viewModel: viewModel)
                 }
-                
-            }
-            .onTapGesture {
-                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
         }
-        
-        
     }
-    
 }
 
 struct MainView_Previews: PreviewProvider {
