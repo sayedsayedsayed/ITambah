@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let screenWidth : CGFloat = UIScreen.main.bounds.width
+let screenWidth : CGFloat = UIScreen.main.bounds.width // use geometry reader
 let screenHeight : CGFloat = UIScreen.main.bounds.height
 
 let instructions = [

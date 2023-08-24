@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WrongAnswerView: View {
-    @ObservedObject var viewModel: BoardViewModel
+    @Binding var showWrongView: Bool
     
     var body: some View {
         ZStack{
@@ -29,7 +29,7 @@ struct WrongAnswerView: View {
         .onAppear{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 withAnimation {
-                    viewModel.board.checkFalse = false
+                    showWrongView = false
                 }
             }
         }
@@ -38,7 +38,7 @@ struct WrongAnswerView: View {
 
 struct WrongAnswerView_Previews: PreviewProvider {
     static var previews: some View {
-        WrongAnswerView(viewModel: BoardViewModel())
+        WrongAnswerView(showWrongView: .constant(true))
             .previewInterfaceOrientation(.landscapeRight)
     }
 }

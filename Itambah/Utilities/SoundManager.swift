@@ -13,7 +13,7 @@ class SoundManager{
     
     var player : AVAudioPlayer?
     
-    func PlaySound(){
+    func playSound(){
         guard let url = Bundle.main.url(forResource: "kids", withExtension: ".mp3") else {return}
         
         do{
@@ -25,7 +25,7 @@ class SoundManager{
         }
     }
     
-    func StopSound(){
+    func stopSound(){
         guard let url = Bundle.main.url(forResource: "kids", withExtension: ".mp3") else {return}
         
         do{

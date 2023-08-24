@@ -13,7 +13,6 @@ struct DotsView: View {
     var body: some View {
         
         HStack {
-            
             VStack(spacing: 0.0) {
                 //this whole VStack is the stacked dots view
                 ForEach(viewModel.board.dots.indices, id: \.self) {
@@ -66,7 +65,7 @@ struct DotsView: View {
                                     .onTapGesture {
                                         if viewModel.board.isDotsClickable {
                                             withAnimation{
-
+                                                
                                                 viewModel.board.dots[viewModel.board.dotsCount[index]].append(contentsOf: [viewModel.board.dots.count+1])
                                                 viewModel.board.dotsCount.remove(at: index)
                                             }
@@ -103,8 +102,6 @@ struct DotsView: View {
                 .border(viewModel.board.isAnswerGlow ? Color.green : Color.clear, width: viewModel.board.isAnswerGlow ? 5 : 0)
                 .cornerRadius(10)
                 .animation(.easeInOut(duration: 3), value: viewModel.board.isAnswerGlow)
-                
-                
             }
             .padding(5)
             .border(viewModel.board.isDotsGlow ? Color.green : Color.clear, width: viewModel.board.isDotsGlow ? 5 : 0)

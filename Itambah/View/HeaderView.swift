@@ -29,13 +29,14 @@ struct HeaderView: View {
                     viewModel.board.soundBtn.toggle()
                     
                     if viewModel.board.soundBtn{
-                        SoundManager.instance.PlaySound()
+                        SoundManager.instance.playSound()
                     }else{
-                        SoundManager.instance.StopSound()
+                        SoundManager.instance.stopSound()
                     }
                 }
             
             Button(action: {
+                
 //                self.backHome.toggle()
             }, label: {
                 Image("Home-1")
@@ -44,6 +45,7 @@ struct HeaderView: View {
 //                HomeView()
 //                    .transition(.move(edge: .leading))
 //            }
+            Spacer()
         }
         .padding(.bottom, 15.0)
     }

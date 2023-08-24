@@ -28,6 +28,8 @@
 		ECCC870E2A9379D800C3531D /* CorrectAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC870D2A9379D800C3531D /* CorrectAnswerView.swift */; };
 		ECCC87102A939A9C00C3531D /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC870F2A939A9C00C3531D /* HintView.swift */; };
 		ECCC87122A93B80E00C3531D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87112A93B80E00C3531D /* HeaderView.swift */; };
+		ECCC87142A95C61000C3531D /* Dots.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87132A95C61000C3531D /* Dots.swift */; };
+		ECCC87162A95C76900C3531D /* DotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC87152A95C76900C3531D /* DotsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		ECCC870D2A9379D800C3531D /* CorrectAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerView.swift; sourceTree = "<group>"; };
 		ECCC870F2A939A9C00C3531D /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
 		ECCC87112A93B80E00C3531D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		ECCC87132A95C61000C3531D /* Dots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dots.swift; sourceTree = "<group>"; };
+		ECCC87152A95C76900C3531D /* DotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCC87032A931B6F00C3531D /* BoardModel.swift */,
+				ECCC87132A95C61000C3531D /* Dots.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			children = (
 				ECA6C4442A924F3D001940F8 /* NavigationViewModel.swift */,
 				ECCC87052A934B5800C3531D /* BoardViewModel.swift */,
+				ECCC87152A95C76900C3531D /* DotsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,12 +247,14 @@
 				ECCC87082A9361AC00C3531D /* DiceEquationView.swift in Sources */,
 				ECCC87102A939A9C00C3531D /* HintView.swift in Sources */,
 				ECCC86F82A92643B00C3531D /* Misc.swift in Sources */,
+				ECCC87162A95C76900C3531D /* DotsViewModel.swift in Sources */,
 				ECCC87122A93B80E00C3531D /* HeaderView.swift in Sources */,
 				EC7D5DAC2A925D0E006F04FA /* BackgroundView.swift in Sources */,
 				CC6CD77F29EA930A00493E44 /* InstructionView.swift in Sources */,
 				ECCC86FA2A92659E00C3531D /* StyleManager.swift in Sources */,
 				CCAA476029E29AEA00CEBD06 /* SoundManager.swift in Sources */,
 				ECA6C4452A924F3D001940F8 /* NavigationViewModel.swift in Sources */,
+				ECCC87142A95C61000C3531D /* Dots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

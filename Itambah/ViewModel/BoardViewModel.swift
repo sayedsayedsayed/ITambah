@@ -55,11 +55,11 @@ class BoardViewModel: ObservableObject {
                 
                 if board.finalCount == false {
                     //wrong answer -> show wrong display
-                    board.checkFalse = true
+                    board.showWrongView = true
                 }
                 else {
                     //correct answer -> show correct display, final stage so no increment
-                    board.checkCorrect = true
+                    board.showCorrectView = true
                 }
             }
             else{
@@ -69,11 +69,11 @@ class BoardViewModel: ObservableObject {
                     board.dotsCountLap1 = board.dotsCount.count
                     if board.checkTrue == false{
                         //wrong answer -> show wrong display
-                        board.checkFalse = true
+                        board.showWrongView = true
                     }
                     else{
                         //correct answer -> show correct display and move to the next stage
-                        board.checkCorrect = true
+                        board.showCorrectView = true
                         board.currentStage += 1 // should be 2
                         
                         board.isDiceClickable = true
@@ -88,11 +88,11 @@ class BoardViewModel: ObservableObject {
                     
                     if board.checkTrue2 == false{
                         //wrong answer -> show wrong display
-                        board.checkFalse = true
+                        board.showWrongView = true
                     }
                     else{
                         //correct answer -> show correct display and move to the next stage
-                        board.checkCorrect = true
+                        board.showCorrectView = true
                         
                         board.currentStage += 1 // should be 4
                         

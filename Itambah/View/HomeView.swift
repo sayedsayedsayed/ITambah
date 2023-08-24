@@ -22,6 +22,8 @@ struct HomeView: View {
                         Image("TambahIcon")
                             .resizable()
                             .frame(width: screenWidth * 0.15, height: screenWidth * 0.15)
+                        //use scale to fit
+                        
                         Text("Tambahin")
                             .font(.system(size: screenWidth * 0.08))
                             .fontWeight(.bold)

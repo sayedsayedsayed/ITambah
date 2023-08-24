@@ -39,6 +39,16 @@ struct HintView: View {
                     }
                 }
         }
+        else {
+            Text("")
+                .font(.system(size: 18, weight: .semibold, design: .rounded))
+                .frame(width: 400, height: 40)
+                .lineLimit(2)
+                .minimumScaleFactor(0.7)
+                .background(Color("SecondColor"))
+                .cornerRadius(8)
+                .offset(y: 10)
+        }
     }
 }
 

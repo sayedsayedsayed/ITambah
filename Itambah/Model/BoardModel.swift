@@ -17,22 +17,29 @@ struct Board {
     var showSplashScreen: Bool = false
     var btnHintClicked: Bool = true
     var isDiceGlow: Bool = false
-    var isAnswerGlow: Bool = false
-    var isDotsClickable: Bool = false
+    var isAnswerGlow: Bool = false //
+    var isDotsClickable: Bool = false //
     var isCheckClickable: Bool = false
     var checkTrue: Bool = false
     var checkTrue2: Bool = false
     
-    var dots : [[Int]] = [[1,2,3], [4,5,6], [7,8,9], [10,11,12]]
-    var dotsCount: [Int] = []
+    var dots : [[Int]] = [[1,2,3], [4,5,6], [7,8,9], [10,11,12]] //
+    var dotsCount: [Int] = [] //
     var finalCount = false
     var result: Int?
-    var checkFalse = false
     var dotsCountLap1 : Int = 0
-    var isDotsGlow: Bool = false
-    var checkCorrect = false
+    var isDotsGlow: Bool = false //
     
     var currentStage: Int = 0
     var soundBtn: Bool = true
+    
+    var showWrongView: Bool = false
+    var showCorrectView: Bool = false
 }
  
+
+/*
+ if a value only need by 1 view, just make it @State variable
+ separation of roles,
+ */
+

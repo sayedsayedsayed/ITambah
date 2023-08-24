@@ -27,11 +27,11 @@ struct MainView: View {
                 }
                 
                 
-                if ((viewModel.board.checkTrue != true || viewModel.board.finalCount != true) && (viewModel.board.checkFalse == true)){
-                    WrongAnswerView(viewModel: viewModel)
+                if viewModel.board.showWrongView {
+                    WrongAnswerView(showWrongView: $viewModel.board.showWrongView)
                 }
                 
-                if ((viewModel.board.checkTrue == true || viewModel.board.finalCount == true) && viewModel.board.checkCorrect == true) {
+                if viewModel.board.showCorrectView {
                     CorrectAnswerView(viewModel: viewModel)
                 }
                 

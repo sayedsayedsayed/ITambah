@@ -29,7 +29,7 @@ struct CorrectAnswerView: View {
                 
             }
             
-            if viewModel.board.finalCount{
+            if viewModel.board.finalCount {
                 
                 Button(action: {
 //                    self.backHome.toggle()
@@ -53,7 +53,7 @@ struct CorrectAnswerView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 withAnimation {
                     if !viewModel.board.finalCount{
-                        viewModel.board.checkCorrect = false
+                        viewModel.board.showCorrectView = false
                     }
                     
                 }
